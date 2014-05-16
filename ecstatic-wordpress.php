@@ -11,6 +11,9 @@ Text Domain: ecstatic-wordpress
 Copyright (c) 2014 Dwayne Charrington
 */
 
+// Script file for scraping our Wordpress site
+require_once 'includes/wp-scraper.php';
+
 function ecstatic_init() {
   load_plugin_textdomain( 'ecstatic-wordpress', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
 }
